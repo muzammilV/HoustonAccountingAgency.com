@@ -7,37 +7,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #f4f7fa;
+            color: #333;
         }
         header {
-            background-color: #004085;
+            background-color: #003366;
             color: white;
             text-align: center;
-            padding: 20px;
-            font-size: 24px;
+            padding: 30px 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+            font-weight: bold;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px;
             background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
         .contact-info {
             display: flex;
             justify-content: space-between;
-            padding: 10px 0;
+            padding: 20px 0;
+            border-bottom: 2px solid #e1e1e1;
+            margin-bottom: 40px;
         }
         .contact-info div {
             flex: 1;
             text-align: center;
         }
+        .contact-info div i {
+            font-size: 36px;
+            color: #003366;
+        }
+        .contact-info div strong {
+            font-size: 18px;
+            display: block;
+            margin-top: 10px;
+            color: #003366;
+        }
         .services {
-            margin-top: 20px;
+            margin-top: 40px;
+        }
+        .services h3 {
+            color: #003366;
         }
         .services ul {
             list-style-type: none;
@@ -45,28 +63,72 @@
         }
         .services ul li {
             background: #e9ecef;
-            margin: 5px 0;
-            padding: 10px;
+            margin: 10px 0;
+            padding: 15px;
             border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         .cta {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 40px;
         }
         .cta a {
             background: #28a745;
             color: white;
-            padding: 10px 20px;
+            padding: 15px 30px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 30px;
+            font-size: 18px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
         }
         .cta a:hover {
             background: #218838;
         }
         iframe {
             width: 100%;
-            height: 300px;
+            height: 450px;
             border: 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .photos {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .photos img {
+            width: 32%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .form-container {
+            margin-top: 40px;
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h3 {
+            color: #003366;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .form-container input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #218838;
         }
     </style>
 </head>
@@ -76,8 +138,9 @@
     </header>
     <div class="container">
         <h2>Welcome to Houston Accounting Agency</h2>
-        <p>Trusted accounting and tax solutions for businesses in Houston.</p>
-        
+        <p>Your trusted partner for comprehensive accounting and tax solutions in Houston. We empower businesses to thrive through professional services and a commitment to excellence.</p>
+
+        <!-- Contact Info Section -->
         <div class="contact-info">
             <div>
                 <i class="fas fa-phone"></i> <br>
@@ -89,12 +152,13 @@
             </div>
             <div>
                 <i class="fas fa-globe"></i> <br>
-                <strong>Website:</strong> www.houstonaccounting.com
+                <strong>Website:</strong> <a href="http://www.houstonaccounting.com" target="_blank">www.houstonaccounting.com</a>
             </div>
         </div>
-        
-        <h3>Our Services</h3>
+
+        <!-- Our Services -->
         <div class="services">
+            <h3>Our Services</h3>
             <ul>
                 <li>Tax Preparation & Planning</li>
                 <li>Bookkeeping & Payroll</li>
@@ -103,13 +167,36 @@
             </ul>
         </div>
 
-        <h3>Client Testimonials</h3>
-        <p>“Amazing service, helped us streamline our finances!” - Jane D.</p>
-        <p>“Reliable and professional accounting firm in Houston.” - John M.</p>
+        <!-- Gallery Section -->
+        <h3>Gallery</h3>
+        <div class="photos">
+            <img src="https://via.placeholder.com/350x200" alt="Accounting Consultation">
+            <img src="https://via.placeholder.com/350x200" alt="Tax Planning Service">
+            <img src="https://via.placeholder.com/350x200" alt="Financial Consulting">
+        </div>
 
+        <!-- Form Submission Section -->
+        <div class="form-container">
+            <h3>Contact Us</h3>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- Google Reviews Section -->
         <h3>Google Reviews</h3>
-        <iframe src="https://www.google.com/maps/embed?..." allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
 
+        <!-- Call to Action -->
         <div class="cta">
             <a href="#contact">Contact Us Now</a>
         </div>
