@@ -3,36 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Houston's Top Tax Experts for Freelance Writers</title>
-    <style>
-        /* Basic CSS - You'll want to improve this */
-        body { font-family: sans-serif; margin: 20px; }
-        #featured-agency { border: 1px solid #ccc; padding: 20px; }
+    <title>Houston Accounting Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  <style>
+        :root {
+            --primary-color: #003366; /* Dark Blue */
+            --secondary-color: #28a745; /* Green - for call to action */
+            --light-color: #f8f9fa;   /* Very Light Gray - for backgrounds */
+            --text-color: #343a40;    /* Dark Gray - for most text */
+            --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            --border-radius: 10px;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: var(--light-color); /* Use CSS variables */
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0; /* Reduced padding */
+            font-size: 24px;   /* Slightly smaller header */
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 960px; /* Adjusted max-width */
+            margin: 20px auto; /* Reduced margin */
+            padding: 20px;     /* Reduced padding */
+            background: white;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+        }
+
+        h2, h3 {
+            color: var(--primary-color);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            justify-content: space-around; /* Space evenly */
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .contact-info div {
+            text-align: center;
+            margin-bottom: 15px; /* Spacing between items on wrap */
+        }
+
+        .contact-info i {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .contact-info strong {
+            display: block;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            background: #fff;  /* White background for list items */
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Softer shadow */
+        }
+
+        .photos {
+            display: flex;
+            flex-wrap: wrap; /* Make images responsive */
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .photos img {
+            width: 45%; /* Adjust image width for responsiveness */
+            max-width: 300px; /* Set a max-width */
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 15px; /* Spacing between images on wrap */
+        }
+
+        .form-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: var(--light-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ced4da; /* Lighter border */
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: darken(var(--secondary-color), 10%); /* Darken on hover */
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cta a {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: var(--box-shadow);
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: darken(var(--secondary-color), 10%);
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px; /* Adjust height as needed */
+            border: 0;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Houston's Top Tax Experts for Freelance Writers</h1>
+    <header>
+        Houston Accounting Agency
+    </header>
 
-    <div id="featured-agency">
-        <h2>Write Tax Solutions</h2>
-        <p>Specializing in helping freelance writers in Houston navigate the complex world of taxes.</p>
+    <div class="container">
+        <h2>Welcome to Houston Accounting Agency</h2>
+        <p>Your trusted partner for comprehensive accounting and tax solutions in Houston. We empower businesses to thrive through professional services and a commitment to excellence.</p>
 
-        <h3>About Us</h3>
-        <p>As freelance writers ourselves, we understand...</p>
+        <div class="contact-info">
+            <div><i class="fas fa-phone"></i><br><strong>Phone:</strong> (123) 456-7890</div>
+            <div><i class="fas fa-envelope"></i><br><strong>Email:</strong> info@houstonaccounting.com</div>
+            <div><i class="fas fa-globe"></i><br><strong>Website:</strong> <a href="http://www.houstonaccounting.com" target="_blank">www.houstonaccounting.com</a></div>
+        </div>
 
-        <h3>Services Offered</h3>
-        <ul>
-            <li>Tax Preparation</li>
-            <li>Estimated Tax Calculations</li>
+        <div class="services">
+            <h3>Our Services</h3>
+            <ul>
+                <li>Tax Preparation & Planning</li>
+                <li>Bookkeeping & Payroll</li>
+                <li>Financial Consulting</li>
+                <li>Audit & Assurance</li>
             </ul>
+        </div>
 
-        <blockquote>"As a freelance writer, I used to dread tax season..." - Jane Doe</blockquote>
+        <h3>Gallery</h3>
+        <div class="photos">
+            <img src="https://via.placeholder.com/350x200" alt="Accounting Consultation">
+            <img src="https://via.placeholder.com/350x200" alt="Tax Planning Service">
+            <img src="https://via.placeholder.com/350x200" alt="Financial Consulting">
+        </div>
 
-        <a href="contact-form.html">Get Your Taxes Done Right. Contact Write Tax Solutions Today!</a>  </div>
+        <div class="form-container">
+            <h3>Contact Us</h3>
+            <form action="#" method="POST">
+                <input type="text" id="name" name="name" placeholder="Name" required><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <textarea id="message" name="message" placeholder="Message" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
 
-        <footer>
-            <p>&copy; 2024 HoustonAccountingAgency.com</p>
-        </footer>
+        <h3>Google Reviews</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
 
+        <div class="cta">
+            <a href="#contact">Contact Us Now</a>
+        </div>
+    </div>
 </body>
 </html>
